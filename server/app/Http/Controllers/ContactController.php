@@ -17,6 +17,11 @@ class ContactController extends Controller
         );
     }
 
+    //$contact-> taga locate ng table
+    //$request-> mga variables or objects inside req.body
+
+    // need ito for key-value pair
+
     public function saveContact(Request $request) {
         $contact = new Contact();
         $contact->name = $request->name;
